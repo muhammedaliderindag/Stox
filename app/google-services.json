@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "722912561546",
+    "project_id": "sarisayfalar-48037",
+    "storage_bucket": "sarisayfalar-48037.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722912561546:android:1d567317b1be6dbc422073",
+        "android_client_info": {
+          "package_name": "com.muhammedaliderindag.sarisayfalar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQQ1a9NBjrOgGMKLzYbxaPe22WRBKFRbA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

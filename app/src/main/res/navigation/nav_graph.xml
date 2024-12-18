@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/anaSayfaFragment">
+
+    <fragment
+        android:id="@+id/anaSayfaFragment"
+        android:name="com.muhammedaliderindag.sarisayfalar.AnaSayfaFragment"
+        android:label="fragment_ana_sayfa"
+        tools:layout="@layout/fragment_ana_sayfa" >
+        <action
+            android:id="@+id/action_anaSayfaFragment_to_profilFragment"
+            app:destination="@id/profilFragment" />
+        <action
+            android:id="@+id/action_anaSayfaFragment_to_adminAnaSayfaFragment"
+            app:destination="@id/adminAnaSayfaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilFragment"
+        android:name="com.muhammedaliderindag.sarisayfalar.ProfilFragment"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" >
+        <action
+            android:id="@+id/action_profilFragment_to_sepetFragment2"
+            app:destination="@id/sepetFragment" />
+        <action
+            android:id="@+id/action_profilFragment_to_ayarlarFragment"
+            app:destination="@id/ayarlarFragment" />
+        <action
+            android:id="@+id/action_profilFragment_to_kullaniciListeleme"
+            app:destination="@id/kullaniciListeleme" />
+    </fragment>
+    <fragment
+        android:id="@+id/ayarlarFragment"
+        android:name="com.muhammedaliderindag.sarisayfalar.AyarlarFragment"
+        android:label="fragment_ayarlar"
+        tools:layout="@layout/fragment_ayarlar" >
+        <action
+            android:id="@+id/action_ayarlarFragment_to_profilFragment"
+            app:popUpTo="@id/profilFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sepetFragment"
+        android:name="com.muhammedaliderindag.sarisayfalar.SepetFragment"
+        android:label="fragment_sepet"
+        tools:layout="@layout/fragment_sepet" />
+    <fragment
+        android:id="@+id/kullaniciListeleme"
+        android:name="com.muhammedaliderindag.sarisayfalar.KullaniciListeleme"
+        android:label="fragment_kullanici_listeleme"
+        tools:layout="@layout/fragment_kullanici_listeleme" >
+        <action
+            android:id="@+id/action_kullaniciListeleme_to_kullaniciSepetBilgiFragment"
+            app:destination="@id/kullaniciSepetBilgiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kullaniciSepetBilgiFragment"
+        android:name="com.muhammedaliderindag.sarisayfalar.KullaniciSepetBilgiFragment"
+        android:label="fragment_kullanici_sepet_bilgi"
+        tools:layout="@layout/fragment_kullanici_sepet_bilgi" />
+    <fragment
+        android:id="@+id/adminAnaSayfaFragment"
+        android:name="com.muhammedaliderindag.sarisayfalar.AdminAnaSayfaFragment"
+        android:label="fragment_admin_ana_sayfa"
+        tools:layout="@layout/fragment_admin_ana_sayfa" />
+</navigation>

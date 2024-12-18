@@ -1,0 +1,22 @@
+<!-- fragment_admin_ana_sayfa.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txtAdminHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siparişler"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSiparisler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtAdminHeader"
+        android:layout_marginTop="8dp"/>
+</RelativeLayout>
